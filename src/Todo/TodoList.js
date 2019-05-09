@@ -35,9 +35,12 @@ class TodoList extends Component {
 
   deleteTodo(event) {
     event.preventDefault();
-    this.setState ({
-
-    }).
+    const array = this.state.items;
+    const index = array.indexOf(event.target.value);
+    array.splice(index, 1);
+    this.setState({
+      items: array
+    });
   }
 
 
@@ -52,7 +55,7 @@ class TodoList extends Component {
               placeholder="Renseigner un item"
               onChange={this.onChange.bind(this)}
             />
-            <button onClick={this.addTodo.bind(this)} > Ajouter </button>
+            <button type="button" class="btn btn-success" onClick={this.addTodo.bind(this)} > Ajouter </button>
           </form>
           <div>
             {this.renderTodo()}
