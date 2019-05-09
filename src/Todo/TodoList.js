@@ -26,11 +26,11 @@ class TodoList extends Component {
   renderTodo() {
     return this.state.items.map((item) => {
       return (
-          <div key={item} class="space-between-items">
+        <ul>
+        <li key={item} class="space-between-items">
             {item} | <button onClick={this.deleteTodo.bind(this)}> X </button>
-            <i class="fa fa-trash-o" aria-hidden="true"></i>
-
-          </div>
+        </li>
+        </ul>
         )
     })
   }
@@ -65,5 +65,7 @@ class TodoList extends Component {
     );
   }
 }
+
+
 
 export default TodoList;
