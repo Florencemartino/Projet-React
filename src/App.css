@@ -31,3 +31,21 @@
     transform: rotate(360deg);
   }
 }
+.container {
+  margin-top: 20px;
+  background-color: #F1FAEE;
+  border-radius: 30%;
+  height: 500px;
+}
+
+h1 {
+  color: #1D3557;
+}
+
+.list-item {
+  margin-top: 50px;
+}
+
+.space-between-items {
+  margin-top: 20px;
+}

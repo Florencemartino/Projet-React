@@ -6,7 +6,10 @@ import TodoList from './Todo/TodoList';
 class App extends Component {
   render () {
     return (
-      <TodoList />
+      <div className="container">
+        <h1 align="center">Ma Todo-list</h1>
+        <TodoList />
+      </div>
     );
   }
 }
